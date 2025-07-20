@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator Layout</title>
+  <style>
+    body {
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .calculator {
+      background: #222;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 300px;
+    }
+
+    .display {
+      background: #090707;
+      color: rgb(238, 247, 238);
+      font-size: 2rem;
+
+      padding: 10px;
+      border-radius: 10px;
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .buttons button {
+      padding: 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .buttons button:hover {
+      background: #444;
+    }
+
+    .buttons .equal {
+      grid-column: span 2;
+      background: #ff9500;
+    }
+
+    .buttons .equal:hover {
+      background: #e68a00;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="  display" >0</div> 
+
+    <div class="buttons">
+
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button">/</button>
+ 
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button">*</button>
+ 
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button">+</button>
+      <button class="button">-</button>
+      
+      <button class="button">0</button>
+      <button class="button">.</button>
+      <button class="button equal">=</button>
+      <button class="button equal">C</button>
+      
+    </div>
+
+  </div>
+  <script src="first.js"></script>
+</body>
+</html>
